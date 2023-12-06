@@ -26,8 +26,10 @@ if __name__ == '__main__':
                 while i < len(line.split(' ')):
                     j = 0
                     while j < int(line.split(' ')[i+1].strip()):
-                        status.append(current_load.strip())
-                        seeds.append(j+int(line.split(' ')[i].strip()))
+                        n = (j+int(line.split(' ')[i].strip()))
+                        if n not in seeds:
+                            status.append(current_load.strip())
+                            seeds.append(n)
                         j+=1
                     i+=2
                 #print(seeds)
