@@ -4,8 +4,9 @@
 import math
 
 input_file = "test01.txt"
-#input_file = "test02.txt"
+input_file = "test02.txt"
 input_file = "input"
+input_file = "input2"
 
 def compute_sol(t,d):
     sol1=(-t+math.sqrt(t**2-4*d))/-2
